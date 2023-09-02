@@ -1,6 +1,9 @@
 for T in range(int(input())):
-    x,y,xr,yr,D = map(int,input().split())
-    if (xr*D) <= x and (yr*D) <= y:
-        print("YES")
-    else:
-        print("NO")
+    k = int(input())
+    step = 0
+    for i in range(1,k+1):
+        if i%2 == 0:
+            step-=1
+        elif i%2 !=0:
+            step+=3
+    print(step)
